@@ -1,0 +1,12 @@
+{"type":"TEXT_MESSAGE_CONTENT","messageId":"msg-orphan","delta":"orphan outside a run"}
+{"type":"RUN_STARTED","threadId":"thread-2","runId":"run-2"}
+{"type":"TOOL_CALL_ARGS","toolCallId":"call-orphan","delta":"{}"}
+{"type":"TOOL_CALL_START","toolCallId":"call-2","toolCallName":"lookup"}
+{"type":"TOOL_CALL_ARGS","toolCallId":"call-2","delta":"{not json"}
+{"type":"TOOL_CALL_END","toolCallId":"call-2"}
+{"type":"STATE_DELTA","delta":[{"op":"replace","path":"/missing","value":1}]}
+{"type":"STATE_SNAPSHOT","snapshot":{"a":1}}
+{"type":"STATE_DELTA","delta":[{"op":"replace","path":"/missing","value":1}]}
+{"type":"TEXT_MESSAGE_START","messageId":"msg-2"}
+{"type":"TEXT_MESSAGE_CONTENT","messageId":"msg-2","delta":"never closed"}
+{"type":"RUN_FINISHED","threadId":"thread-2","runId":"run-2","outcome":{"foo":1}}

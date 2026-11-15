@@ -1,0 +1,82 @@
+{
+  "counts": {
+    "error": 8,
+    "warning": 1
+  },
+  "events": 12,
+  "final_state": {
+    "a": 1
+  },
+  "findings": [
+    {
+      "code": "E-RUN-ORDER",
+      "detail": "TEXT_MESSAGE_CONTENT outside a run (only the run lifecycle is mandatory, so this stream is not replayable)",
+      "event_index": 0,
+      "event_type": "TEXT_MESSAGE_CONTENT",
+      "severity": "error"
+    },
+    {
+      "code": "E-TEXT-UNOPENED",
+      "detail": "content for message 'msg-orphan' that was never started",
+      "event_index": 0,
+      "event_type": "TEXT_MESSAGE_CONTENT",
+      "severity": "error"
+    },
+    {
+      "code": "E-TOOL-UNOPENED",
+      "detail": "arguments for tool call 'call-orphan' that was never started",
+      "event_index": 2,
+      "event_type": "TOOL_CALL_ARGS",
+      "severity": "error"
+    },
+    {
+      "code": "E-TOOL-ARGS-NOT-JSON",
+      "detail": "concatenated arguments for 'call-2' are not JSON (Expecting property name enclosed in double quotes); the protocol does not validate this",
+      "event_index": 5,
+      "event_type": "TOOL_CALL_END",
+      "severity": "error"
+    },
+    {
+      "code": "E-STATE-DELTA-NO-BASE",
+      "detail": "STATE_DELTA before any STATE_SNAPSHOT; RFC 6902 leaves applicability to the applier",
+      "event_index": 6,
+      "event_type": "STATE_DELTA",
+      "severity": "error"
+    },
+    {
+      "code": "E-STATE-PATCH-FAILED",
+      "detail": "op[0] (replace) cannot apply: \"key 'missing' missing\"",
+      "event_index": 6,
+      "event_type": "STATE_DELTA",
+      "severity": "error"
+    },
+    {
+      "code": "E-STATE-PATCH-FAILED",
+      "detail": "op[0] (replace) cannot apply: \"key 'missing' missing\"",
+      "event_index": 8,
+      "event_type": "STATE_DELTA",
+      "severity": "error"
+    },
+    {
+      "code": "E-TEXT-UNCLOSED",
+      "detail": "message 'msg-2' never closed",
+      "event_index": 9,
+      "event_type": "TEXT_MESSAGE_START",
+      "severity": "warning"
+    },
+    {
+      "code": "E-RUN-OUTCOME",
+      "detail": "outcome.type is missing or not a string (the AG-UI client strips unknown ones)",
+      "event_index": 11,
+      "event_type": "RUN_FINISHED",
+      "severity": "error"
+    }
+  ],
+  "format": "auto",
+  "input": "examples/in/broken.jsonl",
+  "ok": false,
+  "parse_errors": [],
+  "spec": "AG-UI 1.0",
+  "tool": "agui-stream-doctor",
+  "version": "1.0.0"
+}

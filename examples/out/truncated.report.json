@@ -1,0 +1,31 @@
+{
+  "counts": {
+    "error": 1,
+    "warning": 1
+  },
+  "events": 2,
+  "final_state": null,
+  "findings": [
+    {
+      "code": "E-RUN-UNCLOSED",
+      "detail": "stream ends while run 'run-3' is still open",
+      "event_index": 1,
+      "event_type": "RUN_STARTED",
+      "severity": "error"
+    },
+    {
+      "code": "E-TEXT-UNCLOSED",
+      "detail": "message 'msg-3' never closed",
+      "event_index": 1,
+      "event_type": "TEXT_MESSAGE_START",
+      "severity": "warning"
+    }
+  ],
+  "format": "auto",
+  "input": "examples/in/truncated.jsonl",
+  "ok": false,
+  "parse_errors": [],
+  "spec": "AG-UI 1.0",
+  "tool": "agui-stream-doctor",
+  "version": "1.0.0"
+}

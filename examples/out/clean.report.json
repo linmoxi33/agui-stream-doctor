@@ -1,0 +1,22 @@
+{
+  "counts": {
+    "error": 0,
+    "warning": 0
+  },
+  "events": 14,
+  "final_state": {
+    "count": 2,
+    "items": [
+      "a",
+      "b"
+    ]
+  },
+  "findings": [],
+  "format": "auto",
+  "input": "examples/in/clean.jsonl",
+  "ok": true,
+  "parse_errors": [],
+  "spec": "AG-UI 1.0",
+  "tool": "agui-stream-doctor",
+  "version": "1.0.0"
+}

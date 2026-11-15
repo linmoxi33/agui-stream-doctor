@@ -1,0 +1,10 @@
+data: {"type":"RUN_STARTED","threadId":"thread-4","runId":"run-4"}
+
+data: {"type":"TOOL_CALL_START","toolCallId":"call-4","toolCallName":"echo"}
+
+data: {"type":"TOOL_CALL_ARGS","toolCallId":"call-4","delta":"{\"a\":1}"}
+
+data: {"type":"TOOL_CALL_END","toolCallId":"call-4"}
+
+data: {"type":"RUN_FINISHED","threadId":"thread-4","runId":"run-4"}
+

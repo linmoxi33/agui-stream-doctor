@@ -1,0 +1,14 @@
+{"type":"RUN_STARTED","threadId":"thread-1","runId":"run-1","protocolVersion":"1.0"}
+{"type":"TEXT_MESSAGE_START","messageId":"msg-1","role":"assistant"}
+{"type":"TEXT_MESSAGE_CONTENT","messageId":"msg-1","delta":"hello "}
+{"type":"TEXT_MESSAGE_CONTENT","messageId":"msg-1","delta":"world"}
+{"type":"TEXT_MESSAGE_END","messageId":"msg-1"}
+{"type":"TOOL_CALL_START","toolCallId":"call-1","toolCallName":"get_weather"}
+{"type":"TOOL_CALL_ARGS","toolCallId":"call-1","delta":"{\"city\":"}
+{"type":"TOOL_CALL_ARGS","toolCallId":"call-1","delta":"\"SF\"}"}
+{"type":"TOOL_CALL_END","toolCallId":"call-1"}
+{"type":"STATE_SNAPSHOT","snapshot":{"count":1,"items":["a"]}}
+{"type":"STATE_DELTA","delta":[{"op":"add","path":"/count","value":2},{"op":"add","path":"/items/-","value":"b"}]}
+{"type":"STEP_STARTED","stepName":"summarize"}
+{"type":"STEP_FINISHED","stepName":"summarize"}
+{"type":"RUN_FINISHED","threadId":"thread-1","runId":"run-1","outcome":{"type":"success"}}
